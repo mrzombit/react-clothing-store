@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import CustomButton from '../custom-buttom/custom-button.component'
 import FormInput from '../form-input/form-input.component'
-import { signInWithGoogle } from '../../firebase/firebse.utils'
+import { auth, signInWithGoogle } from '../../firebase/firebse.utils'
 
 import './sign-in.styles.scss'
 
@@ -15,14 +15,20 @@ class SignIn extends Component {
         }
     }
 
-    handleSubmit = event => {
+    handleSubmit = async event => {
         event.preventDefault() //we wanna access full control what sub it is gonna do
-        this.setState({ email: '', password: '' })
+        
+        const { email, password} = this.state
+        try{
+            await auth.signInWithEmailAndPassword(email, password)
+            this.setState({email:'', password:''})
+        }catch(error){
+            console.log(error)
+        }
     }
 
     handleChange = event => {
         const { value, name } = event.target
-        console.log(value)
         this.setState({ [name]: value })
     }
 
