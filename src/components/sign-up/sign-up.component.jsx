@@ -47,11 +47,13 @@ class SignUp extends React.Component {
     }
 
     handleChange = event => {
-        const { name, value } = event.target
+        const { value, name } = event.target
+        console.log([name])
         this.setState({ [name]: value })
     }
 
     render() {
+        const { displayName, email, password, confirmPassword } = this.state
         return (
             <div className='sign-up'>
                 <h2 className='title'>I do not have an account</h2>
@@ -59,7 +61,7 @@ class SignUp extends React.Component {
                 <form className='sign-up-form' onSubmit={this.handleSubmit}>
                     <FormInput
                         type='text'
-                        name='displayname'
+                        name='displayName'
                         value={displayName}
                         onChange={this.handleChange}
                         label='Name'
