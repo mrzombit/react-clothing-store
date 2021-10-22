@@ -1,27 +1,49 @@
-# React Clothing Store
+# :zap:React Clothing Store:zap: ![](https://img.shields.io/badge/npm-6.14.6-green.svg) ![](https://img.shields.io/badge/React-2.0.1-blue.svg)
 
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="topic 1">Topic 1 Header</a>
-      <ul>
-        <li><a href="topic 2">Topic 2 Header</a></li>
-      </ul>
+      <a href="About Project">About Project</a>
+    </li>
+    <li>
+      <a href="Modules">Modules</a>
+    </li>
+    <li>
+      <a href="Preview">Preview</a>
     </li>
   </ol>
 </details>
 
-## topic 1
-Descrtription [Link](https://www.google.com/)
-```Bash
-  Code
-```
+## About Project
+<li>
+  <a>Categories</a>
+</li>
+<li>
+  <a>Cart</a>
+</li>
+<li>
+  <a>Sign In & Sign Up</a>
+</li>
+<li>
+  <a>Payment</a>
+</li>
 
-## topic 2
-Open `LICENSE.txt` for more information.
-Your Name - [@your_twitter](https://twitter.com/your_username) - lnwzombit@gmail.com
+## Modules
+<li>
+  <a>Redux</a>
+</li>
+<li>
+  <a>Sass</a>
+</li>
+<li>
+  <a>Bootstrap</a>
+</li>
 
-![](name-of-giphy.gif)
+## Preview
+![](Clothing_Store.gif)
+
+## Contact
+krittikamas.snp@gmail.com
 
